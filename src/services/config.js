@@ -1,6 +1,6 @@
 export const baseURL = {
     authenticationBaseURL : "http://localhost:2020",
-    adminBaseURL: "http://localhost:5000/api/admin",
+    adminBaseURL: "https://keshavsuman.cruspo.com/api/admin",
 } 
 
 export const routes = {
