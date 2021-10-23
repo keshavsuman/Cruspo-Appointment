@@ -1,0 +1,133 @@
+.schedule-wrapper{
+    flex-basis: 55%;
+    padding: 0 10px;
+}
+
+.select-hour{
+    flex-basis: 60%;
+    padding: 2%;
+}
+
+.date-override-button{
+    margin: 20px 0;
+    border-radius: 100px;
+    width: 80%;
+    padding: 15px;
+    border:1px solid #1462e1;
+    color:#1462e1;
+    background-color: white;
+    font-size: 18px;
+
+}
+select::-ms-expand {
+    display: none;
+}
+
+.time-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+.day-time-setter{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cruspo-datalist{
+    border:none;
+    height: 20px;
+    padding: 10px 10px;
+    font-size: 18px;
+    width: 150px;
+}
+
+.date-override-modal{
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    overflow-y: scroll;
+    transform: translate(-50%, -50%);
+}
+
+.date-override-input{
+    margin:10px;
+    width: 80%;
+    border:none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    text-align: center;
+}
+.date-override-calendar-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-appointment-form{
+    display: flex;
+    padding: 20px 30px;
+}
+
+.edit-appointment-checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.edit-appointment-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.edit-appointment-checkbox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.edit-appointment-checkbox-container:hover input ~ .edit-appointment-checkbox {
+    background-color: #ccc;
+}
+  
+.edit-appointment-checkbox-container input:checked ~ .edit-appointment-checkbox {
+    background-color: #2196F3;
+}
+
+.edit-appointment-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.edit-appointment-checkbox-container input:checked ~ .edit-appointment-checkbox:after {
+    display: block;
+}
+.edit-appointment-checkbox-container .edit-appointment-checkbox:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
